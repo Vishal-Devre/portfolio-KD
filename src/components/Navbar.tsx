@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import {
-  FaSun, FaMoon, FaBars, FaTimes,
+  FaSun, FaMoon, FaTimes,
 } from 'react-icons/fa';
 
 interface NavbarProps {

@@ -28,7 +28,7 @@ function createIconElement(def: IconDef, index: number) {
   return { ...def, id: index };
 }
 
-const floaters = ICONS.map((ic, i) => createIconElement(ic, i));
+const floaters = ICONS.map((ic, idx) => createIconElement(ic, idx));
 
 export default function FloatingIcons() {
   const containerRef = useRef<HTMLDivElement>(null);
@@ -38,7 +38,7 @@ export default function FloatingIcons() {
     if (!container) return;
     const items = container.querySelectorAll('.float-icon');
 
-    items.forEach((el, i) => {
+    items.forEach((el, _i) => {
       const x = 5 + Math.random() * 85;
       const y = 5 + Math.random() * 85;
       const duration = 8 + Math.random() * 12;

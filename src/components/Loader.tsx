@@ -29,7 +29,7 @@ export default function Loader({ onComplete }: LoaderProps) {
         // Dot pulse
         .to(
           dotsRef.current!.children,
-          { opacity: [0.3, 1], repeat: 3, yoyo: true, duration: 0.3, stagger: 0.1 },
+          { keyframes: [{ opacity: 0.3 }, { opacity: 1 }], repeat: 3, yoyo: true, duration: 0.3, stagger: 0.1 },
           0.4
         )
         // Fade out overlay

@@ -2,7 +2,7 @@ import { useEffect, useRef } from 'react';
 import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import {
-  FaMapMarkerAlt, FaEnvelope, FaPhone, FaGraduationCap, FaCode, FaLaptopCode, FaBrain,
+  FaMapMarkerAlt, FaEnvelope, FaPhone, FaGraduationCap, FaLaptopCode, FaBrain,
 } from 'react-icons/fa';
 
 gsap.registerPlugin(ScrollTrigger);
